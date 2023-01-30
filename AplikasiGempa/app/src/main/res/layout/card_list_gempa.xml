@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_list_gempa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:inputType="textNoSuggestions"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/tv_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:ems="3"
+            android:minWidth="250dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:textColor="@color/black"
+            tools:text="Lokasi"
+            tools:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"/>
+
+        <TextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_lokasi"
+            android:layout_marginTop="10sp"
+            android:ellipsize="end"
+            android:ems="3"
+            android:minWidth="250dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:textColor="@color/black"
+            tools:text="Tanggal dan Waktu"
+            tools:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"/>
+
+        <TextView
+            android:id="@+id/tv_skala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tanggal"
+            android:layout_marginTop="5sp"
+            android:ellipsize="end"
+            android:ems="3"
+            android:minWidth="250dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:textColor="@color/black"
+            tools:text="Skala"
+            tools:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
